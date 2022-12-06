@@ -1,17 +1,5 @@
 {
-    "compilerOptions": {
-        "module": "esNext",
-        "target": "es2021",
-        "moduleResolution": "node",
-        "strict": true,
-        "noImplicitAny": true,
-        "noImplicitReturns": true,
-        "noImplicitThis": true,
-        "strictNullChecks": true,
-        "strictFunctionTypes": true,
-        "skipLibCheck": true,
-        "preserveConstEnums": true,
-        "sourceMap": true,
-        "rootDir": "src"
-    }
-}
+		"extends": "@tsconfig/svelte/tsconfig.json",
+		"include": ["src/**/*", "src/node_modules/**/*"],
+		"exclude": ["node_modules/*", "__sapper__/*", "static/*"]
+	}
